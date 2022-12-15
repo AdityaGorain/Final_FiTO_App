@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.fito.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_stepsFragment"
+            app:destination="@id/stepsFragment"
+            app:popUpTo="@id/navigation_dashboard"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_details2Activity"
+            app:destination="@id/details2Activity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_food"
+        android:name="com.example.fito.ui.food.FoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_food" >
+        <action
+            android:id="@+id/action_navigation_food_to_mealActivity"
+            app:destination="@id/mealActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_activity"
+        android:name="com.example.fito.ui.activity.ActivitiesFragment"
+        android:label="Activity"
+        tools:layout="@layout/fragment_activities" />
+
+    <fragment
+        android:id="@+id/navigation_diary"
+        android:name="com.example.fito.ui.diary.DiaryFragment"
+        android:label="Diary"
+        tools:layout="@layout/fragment_diary" />
+    <fragment
+        android:id="@+id/stepsFragment"
+        android:name="com.example.fito.ui.dashboard.StepsFragment"
+        android:label="fragment_steps"
+        tools:layout="@layout/fragment_steps" >
+
+        <action
+            android:id="@+id/action_stepsFragment_to_chart_WeeklyFragment"
+            app:destination="@id/chart_WeeklyFragment" />
+        <action
+            android:id="@+id/action_stepsFragment_to_chart_MonthlyFragment"
+            app:destination="@id/chart_MonthlyFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mealActivity"
+        android:name="com.example.fito.ui.food.MealActivity"
+        android:label="activity_meal"
+        tools:layout="@layout/activity_meal" />
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.fito.ui.DetailsActivity"
+        android:label="activity_details"
+        tools:layout="@layout/activity_details" />
+    <activity
+        android:id="@+id/details2Activity"
+        android:name="com.example.fito.ui.Details2Activity"
+        android:label="activity_details2"
+        tools:layout="@layout/activity_details2" />
+    <fragment
+        android:id="@+id/chart_WeeklyFragment"
+        android:name="com.example.fito.ui.dashboard.Chart_WeeklyFragment"
+        android:label="fragment_chart_weekly"
+        tools:layout="@layout/fragment_chart_weekly" />
+    <fragment
+        android:id="@+id/chart_MonthlyFragment"
+        android:name="com.example.fito.ui.dashboard.Chart_MonthlyFragment"
+        android:label="fragment_chart__monthly"
+        tools:layout="@layout/fragment_chart__monthly" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.fito.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/foodSelectActivity"
+        android:name="com.example.fito.ui.food.FoodSelectActivity"
+        android:label="activity_food_select"
+        tools:layout="@layout/activity_food_select" />
+</navigation>

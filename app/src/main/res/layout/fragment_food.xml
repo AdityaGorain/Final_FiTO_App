@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="2"
+    tools:context=".ui.food.FoodFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="299dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Calories Consumed"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="1500/2000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="303dp"
+        android:layout_height="33dp"
+        android:progressDrawable="@drawable/custom_progress_bg"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <!--<ProgressBar
+        android:id="@+id/indeterminateBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="313dp"
+        android:layout_height="31dp"
+        android:progress="56"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="Fats"
+            android:textAlignment="gravity"
+            android:textSize="19dp"></TextView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="Carbs"
+            android:textSize="19dp"></TextView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="Proteins"
+            android:textSize="19dp"></TextView>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="323dp"
+        android:layout_height="226dp"
+        android:columnCount="1"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_bfast"
+            style="?attr/materialCardViewElevatedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:clickable="true"
+
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#CEEAFF"
+                    android:fontFamily="@font/inter_bold"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Breakfast"
+                    android:textSize="18sp"></TextView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_lunch"
+            style="?attr/materialCardViewElevatedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/inter_bold"
+                    android:textAlignment="center"
+                    android:background="#CEEAFF"
+                    android:gravity="center_vertical"
+                    android:text="Lunch"
+                    android:textSize="18sp"></TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dinner"
+            style="?attr/materialCardViewElevatedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#CEEAFF"
+                    android:fontFamily="@font/inter_bold"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Dinner"
+                    android:textSize="18sp"></TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/circle_fats"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/nutrients_bg"
+        android:gravity="center"
+        android:text="5.5g"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/circle_carbs"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/nutrients_bg"
+        android:gravity="center"
+        android:text="5.5g"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/circle_proteins"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/nutrients_bg"
+        android:gravity="center"
+        android:text="5.5g"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.19" />
+</androidx.constraintlayout.widget.ConstraintLayout>

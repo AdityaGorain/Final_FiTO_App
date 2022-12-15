@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "39076736227",
+    "firebase_url": "https://fito-879ca-default-rtdb.firebaseio.com",
+    "project_id": "fito-879ca",
+    "storage_bucket": "fito-879ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39076736227:android:fff86d0f462910422ea9d6",
+        "android_client_info": {
+          "package_name": "com.example.bottomnavtrial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39076736227-eqpjg021c6tcues20uf16om97e660dts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdeDiTTjFaTy16umBKgf2kGBeH83e8c5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39076736227-eqpjg021c6tcues20uf16om97e660dts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39076736227:android:3bcac272c299db5e2ea9d6",
+        "android_client_info": {
+          "package_name": "com.example.fito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39076736227-eqpjg021c6tcues20uf16om97e660dts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdeDiTTjFaTy16umBKgf2kGBeH83e8c5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39076736227-eqpjg021c6tcues20uf16om97e660dts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

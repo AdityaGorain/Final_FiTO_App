@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Details2Activity">
+
+    <EditText
+        android:id="@+id/weight_d"
+        android:layout_width="286dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Weight (Kgs)"
+        android:paddingLeft="10dp"
+        android:textColor="#978D8D"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#FF757575"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_sleep"
+        app:layout_constraintStart_toStartOf="@+id/button_sleep"
+        app:layout_constraintTop_toBottomOf="@+id/button_sleep" />
+
+    <EditText
+        android:id="@+id/water_d"
+        android:layout_width="286dp"
+        android:layout_height="54dp"
+        android:autofillHints=""
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:hint=" Water (L)"
+        android:paddingLeft="10dp"
+        android:textColor="#978D8D"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#FF757575"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <EditText
+        android:id="@+id/sleep_d"
+        android:layout_width="286dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Sleep (Hrs)"
+        android:paddingLeft="10dp"
+        android:textColor="#978D8D"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#FF757575"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_water"
+        app:layout_constraintStart_toStartOf="@+id/button_water"
+        app:layout_constraintTop_toBottomOf="@+id/button_water" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_d"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/sleep_d"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_d" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/weight_d"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/weight_d"
+        app:layout_constraintTop_toBottomOf="@+id/weight_d" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/water_d"
+        app:layout_constraintStart_toStartOf="@+id/water_d"
+        app:layout_constraintTop_toBottomOf="@+id/water_d" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Record Intake"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+</androidx.constraintlayout.widget.ConstraintLayout>

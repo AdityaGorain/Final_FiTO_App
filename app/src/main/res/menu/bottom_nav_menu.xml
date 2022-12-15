@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard"
+       app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_food"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="Food"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_activity"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Activity"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_diary"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Diary"
+        app:showAsAction="always"/>
+
+</menu>
